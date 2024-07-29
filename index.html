@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/css/style.css">
+    <title>EDC FESTIVAL</title>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-white border-gray-200">
+            <div class="container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="175" height="60" viewBox="0 0 175 60">
+                        <path fill="#000000"
+                            d="M50 34.6C49.3 38.5 45.7 41.5 41.7 41.5 33.9 41.5 30.2 31.4 36.3 26.5 42.3 21.6 51.5 27 50 34.6M17.1 24.5C19.5 24.5 21.7 25.6 23.3 27.2L8.8 31C9.8 27.2 13.2 24.5 17.1 24.5M68.4 41.5C63.7 41.5 59.9 37.7 59.9 33 59.9 28.3 63.7 24.5 68.4 24.5 71.4 24.5 74.1 26.1 75.6 28.4L84.9 28.4C82.8 21.3 76.2 16.1 68.4 16.1 64.8 16.1 61.5 17.2 58.7 19.1L58.7 5 50.2 9.4 50.2 18.3C43.4 14.4 34.7 15.8 29.4 21.3 26.2 17.9 21.7 16 17.1 16 7.6 16.1 0 23.7 0 33 0 42.4 7.6 50 17.1 50 20.9 50 24.4 48.7 27.3 46.6L22 39.9C20.6 41 18.8 41.5 17.1 41.5 14.8 41.5 12.6 40.6 11 38.9L24.8 35.3C25.4 39.4 27.3 43.2 30.6 45.9 36.6 51 45.7 51.3 52 46.6 53.1 45.7 54.2 44.7 55 43.6 58.3 47.6 63.2 50 68.4 50 76.2 50 82.8 44.8 84.9 37.6L75.6 37.6C74 40 71.3 41.5 68.4 41.5" />
+                    </svg>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="#" class="custom-pink block py-2 px-3 rounded md:bg-transparent md:p-0"
+                                aria-current="page">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Programme</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-600 md:p-0">Information</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container mx-auto max-w-screen-xl">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12">
+                    <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">Bienvenue au <span
+                            class="custom-pink">EDC</span> Las Vegas</h1>
+                </div>
+                <div class="col-span-12 relative">
+                    <img src="./images/banner.png" alt="banner" class="w-full h-auto">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+                        <div class="text-white p-8">
+                            <p class="text-xl text-center mb-8">
+                                Electric Daisy Carnival (EDC) Las Vegas est l'un des plus grands et des plus
+                                emblématiques festivals de musique électronique au monde. Chaque année, des milliers de
+                                passionnés de musique se rassemblent pour célébrer trois jours de musique, de lumières,
+                                et de culture. Situé dans le désert de Las Vegas, ce festival offre une expérience
+                                immersive avec des performances époustouflantes, des installations artistiques
+                                spectaculaires, et une atmosphère magique.
+                            </p>
+                            <div class="divider divider-secondary"></div>
+                            <ul class="space-y-6 text-center">
+                                <li class="col-span-12">
+                                    <h2 class="text-2xl font-semibold">Ambiance Électrisante</h2>
+                                    <p class="text-md">
+                                        Plongez dans une atmosphère où la musique, les lumières, et l'énergie des
+                                        festivaliers se combinent pour créer une expérience inoubliable.
+                                    </p>
+                                </li>
+                                <li class="col-span-12">
+                                    <h2 class="text-2xl font-semibold">Artistes de Renommée</h2>
+                                    <p class="text-md">
+                                        Des DJ et producteurs de renommée mondiale se produisent sur plusieurs scènes,
+                                        offrant une variété de styles de musique électronique pour satisfaire tous les
+                                        goûts.
+                                    </p>
+                                </li>
+                                <li class="col-span-12">
+                                    <h2 class="text-2xl font-semibold">Installations Artistiques</h2>
+                                    <p class="text-md">
+                                        Explorez des installations artistiques interactives et des décors visuels
+                                        époustouflants qui ajoutent une dimension unique à l'expérience du festival.
+                                    </p>
+                                </li>
+                                <li class="col-span-12">
+                                    <h2 class="text-2xl font-semibold">Communauté et Culture</h2>
+                                    <p class="text-md">
+                                        Rejoignez une communauté de festivaliers partageant les mêmes passions et
+                                        valeurs, créant des souvenirs et des amitiés durables.
+                                    </p>
+                                </li>
+                            </ul>
+                            <div class="text-center mt-12">
+                                <a href="information.html"
+                                    class="button-custom-pink text-white px-6 py-3 rounded hover:bg-blue-700">
+                                    En savoir plus sur EDC Las Vegas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

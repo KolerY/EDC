@@ -1,0 +1,15 @@
+.custom-pink {
+  color: rgb(237, 56, 149);
+}
+
+.button-custom-pink {
+  background-color: rgb(237, 56, 149);
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
