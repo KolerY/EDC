@@ -1,9 +1,18 @@
 // font-family: "Roboto", sans-serif;
+// font-family: "Oswald", sans-serif;
 
 // custom color
 
+h1,h2,h3 {
+    font-family: "Oswald", sans-serif;
+}
+
 .custom-pink {
   color: rgb(237, 56, 149);
+}
+
+.border-custom-pink {
+    border-color: rgb(237, 56, 149);
 }
 
 .button-custom-pink {
@@ -19,5 +28,7 @@ main {
 }
 
 .background-image {
-  background-image: url(../../images/banner.png);
+  background-image: url(../../images/banner-test2.png);
+  background-size: cover;
+  background-position: center -400px;
 }
