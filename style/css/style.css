@@ -13,3 +13,7 @@ header {
 main {
   font-family: "Roboto", sans-serif;
 }
+
+.background-image {
+  background-image: url(../../images/banner.png);
+}
