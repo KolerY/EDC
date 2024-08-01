@@ -37,3 +37,14 @@ main {
   background-size: cover;
   background-position: center -200px;
 }
+
+.background-form {
+  background-image: url(../../images/background-form.png);
+  background-size: cover;
+  background-position: center -300px;
+}
+
+.form__errorMessage {
+  color: red;
+  padding-bottom: 5px;
+}
