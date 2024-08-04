@@ -7,8 +7,9 @@ h1 {
   font-family: "Calistoga", serif;
 }
 
-h2,h3 {
-    font-family: "Oswald", sans-serif;
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
 }
 
 .custom-pink {
@@ -16,7 +17,7 @@ h2,h3 {
 }
 
 .border-custom-pink {
-    border-color: rgb(237, 56, 149);
+  border-color: rgb(237, 56, 149);
 }
 
 .button-custom-pink {
@@ -51,7 +52,28 @@ main {
 
 // validation
 
-.form__errorMessage {
+.form__input-control {
+  margin-bottom: 1rem;
+
+  .form__errorMessage {
     color: red;
-    padding-bottom: 5px;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+
+  &.form__errorMessageBox input,
+  &.form__errorMessageBox select {
+    border-color: red;
+    border-width: 3px;
+  }
+
+  &.success input,
+  &.success select {
+    border-color: green;
+    border-width: 3px;
+  }
+}
+
+.asterix {
+  color: red;
 }

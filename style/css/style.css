@@ -2,7 +2,8 @@ h1 {
   font-family: "Calistoga", serif;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: "Oswald", sans-serif;
 }
 
@@ -44,7 +45,23 @@ main {
   background-position: center -300px;
 }
 
-.form__errorMessage {
+.form__input-control {
+  margin-bottom: 1rem;
+}
+.form__input-control .form__errorMessage {
   color: red;
-  padding-bottom: 5px;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+.form__input-control.form__errorMessageBox input, .form__input-control.form__errorMessageBox select {
+  border-color: red;
+  border-width: 3px;
+}
+.form__input-control.success input, .form__input-control.success select {
+  border-color: green;
+  border-width: 3px;
+}
+
+.asterix {
+  color: red;
 }
