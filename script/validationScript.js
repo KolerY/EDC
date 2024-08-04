@@ -15,15 +15,19 @@ const validateForm = () => {
     if (nomValue === "") {
         setError(nom, "Nom est requis");
         noError = false;
-    } else if (nomValue.length > 20) {
-        setError(nom, "Le nom ne peut pas dépasser 20 caractères");
+    } else if (nomValue.length > 40) {
+        setError(nom, "Le nom ne peut pas dépasser 40 caractères");
         noError = false;
     } else if (/\d/.test(nomValue)) {
         setError(nom, "Pas de chiffres autorisés");
         noError = false;
+    } else if (nomValue.length < 2){
+        setError(nom, "Le nom doit contenir au moins 2 caractères");
+        noError = false;
     } else {
         setSuccess(nom);
     }
+    
 
     if (emailValue === "") {
         setError(email, "Email est requis");
