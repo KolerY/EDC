@@ -70,29 +70,103 @@
         </nav>
     </header>
 
-    <main class="animated-gradient h-screen flex items-center justify-center">
-        <div class="grid grid-cols-12 gap-6 text-white text-center container mx-auto max-w-screen-xl">
-            <div class="col-span-12 mb-12" id="comment-venir">
-                <h1 class="text-5xl font-bold mb-6">Comment venir ?</h1>
-                <!-- Google iframe -->
-                <div class="col-span-12 md:col-span-6 lg:col-span-6 mb-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12866.748915417083!2d-115.01816162281062!3d36.271371700701835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8e7c8e904e29d%3A0x28b930a89d67d6fa!2sEDC%20Las%20Vegas!5e0!3m2!1sfr!2sca!4v1723051002399!5m2!1sfr!2sca"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" class="rounded-md"></iframe>
-                </div>
-                <!-- Instruction pour venir en voiture -->
-                <div class="col-span-12 md:col-span-6 lg:col-span-6 mb-6">
-                    <h2 class="text-3xl font-bold mb-4">En voiture</h2>
-                    <p class="text-xl font-bold">Suivez les instructions ci-dessous pour rejoindre le festival en voiture :</p>
-                    <ul class="list-disc ml-6 mt-2 list-none font-bold">
-                        <li>Parking général : situé à proximité de l'entrée principale.</li>
-                        <li>Parking VIP : avec accès privilégié plus proche du site.</li>
-                        <li>Parking pour personnes à mobilité réduite : des places réservées sont disponibles.</li>
-                    </ul>
+    <main class="animated-gradient flex items-center justify-center">
+        <div class="container mx-auto max-w-screen-xl">
+            <div class="text-white text-center">
+                <h1 class="text-5xl font-bold mb-12 pt-12">Comment venir ?</h1>
+                <div class="grid grid-cols-12 gap-6">
+                    <!-- Google Maps iframe -->
+                    <div class="col-span-12 lg:col-span-6 md:col-span-6 mb-6">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12866.748915417083!2d-115.01816162281062!3d36.271371700701835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8e7c8e904e29d%3A0x28b930a89d67d6fa!2sEDC%20Las%20Vegas!5e0!3m2!1sfr!2sca!4v1723051002399!5m2!1sfr!2sca"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="rounded-md"></iframe>
+                    </div>
+                    <!-- Instruction pour venir en voiture -->
+                    <div class="col-span-12 lg:col-span-6 md:col-span-6 mb-6">
+                        <h2 class="text-3xl font-bold mb-4">En voiture</h2>
+                        <p class="text-xl font-bold">Suivez les instructions ci-dessous pour rejoindre le festival en
+                            voiture :</p>
+                        <ul class="list-none ml-6 mt-2">
+                            <li>Depuis l'aéroport de Las Vegas, prenez la I-215 W et I-15 N en direction de Las Vegas
+                                Blvd N.</li>
+                            <li>Continuez sur Las Vegas Blvd N jusqu'au site du festival.</li>
+                            <li>Des panneaux de signalisation vous guideront jusqu'au parking.</li>
+                        </ul>
+                    </div>
+                    <!-- Parking -->
+                    <div
+                        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 col-span-4">
+                        <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Parking Général</h5>
+                        <div class="items-baseline text-gray-900 dark:text-white pb-3">
+                            <span class="text-5xl font-extrabold tracking-tight">Gratuit</span>
+                        </div>
+                        <div class="mb-8 font-light text-gray-500 dark:text-gray-400">
+                            <p class="mb-4 font-bold">
+                                Le stationnement général est GRATUIT. Les plus grands parkings avec le meilleur accès se
+                                trouvent
+                                sur les côtés ouest et sud (Parkings Brown et Green), accessibles via Las Vegas Blvd.
+                            </p>
+
+                            <p class="mb-4 font-bold">
+                                Notez bien l'endroit où vous garez votre voiture. Vérifiez les panneaux pour le numéro
+                                du parking.
+                                Repérez les repères, épinglez votre position, prenez une photo. Notez le trajet que vous
+                                empruntez
+                                pour vous rendre au lieu, afin de pouvoir retrouver facilement votre voiture après le
+                                spectacle.
+                            </p>
+
+                            <p class="font-bold">
+                                Les parkings généraux ouvrent à 15h le vendredi, et à 17h le samedi et le dimanche.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div
+                        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 col-span-4">
+                        <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Parking VIP</h5>
+                        <div class="items-baseline text-gray-900 dark:text-white pb-3">
+                            <span class="text-3xl font-semibold">$</span>
+                            <span class="text-5xl font-extrabold tracking-tight">50</span>
+                            <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/jour</span>
+                        </div>
+                        <div class="mb-8 font-light text-gray-500 dark:text-gray-400">
+                            <p class="mb-4 font-bold">Réduisez votre temps et vos tracas avec le Parking Premier. Vous
+                                entrerez et sortirez plus
+                                facilement du parking, ce qui signifie plus de temps à profiter du festival.</p>
+
+                            <p class="mb-4 font-bold">Prenez l'I-15 Nord, sortez à la sortie 58 en direction d'Apex.
+                                Tournez à DROITE sur N Las
+                                Vegas Blvd. Suivez les panneaux pour le Parking Jaune/Parking Premier. Tournez à DROITE
+                                dans
+                                le Parking Jaune à l'Entrée 9. C'est le seul moyen d'accéder au Parking Premier, alors
+                                ne
+                                tentez pas d'autres itinéraires. Seuls les détenteurs de passes Parking Premier seront
+                                autorisés sur cet itinéraire.</p>
+
+                            <p class="font-bold">Le Parking Premier ouvre à 15h le vendredi, et à 17h le samedi et le
+                                dimanche.</p>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div
+                        class="w-full max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700 col-span-4">
+                        <h5 class="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400">Parking PMR</h5>
+                        <div class="items-baseline text-gray-900 dark:text-white mb-3">
+                            <span class="text-5xl font-extrabold tracking-tight">Gratuit</span>
+                        </div>
+                        <div class="mb-8 font-light text-gray-500 dark:text-gray-400">
+                            <p class="mb-4 font-bold">Prenez l'I-15 Nord, sortez à la sortie 58 en direction d'Apex. Tournez à DROITE sur N Las
+                                Vegas Blvd. Suivez les panneaux pour le Parking ADA. Tournez à DROITE dans l'Entrée 8.</p>
+
+                                <p class="font-bold">Le Parking PMR ouvre à 15h le vendredi, et à 17h le samedi et le dimanche.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
+
     </main>
 
     <footer class="bg-white rounded-lg shadow dark:bg-gray-900">
