@@ -93,7 +93,6 @@ const validateForm = () => {
 
     if (parkingValue === "aucun") {
         setSuccess(parking);
-        noError = false;
     } else if (parkingValue === "") {
         setError(parking, "Option de parking est requise");
         noError = false;
