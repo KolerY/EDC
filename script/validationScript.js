@@ -3,6 +3,10 @@ const nom = document.getElementById("nom");
 const email = document.getElementById("email");
 const typeBillet = document.getElementById("type_billet");
 const nombreBillets = document.getElementById("nombre_billets");
+const telephone = document.getElementById("telephone");
+const adresse = document.getElementById("adresse");
+const codePostal = document.getElementById("code_postal");
+const parking = document.getElementById("parking");
 
 const validateForm = () => {
     let noError = true;
@@ -11,6 +15,10 @@ const validateForm = () => {
     const emailValue = email.value.trim();
     const typeBilletValue = typeBillet.value;
     const nombreBilletsValue = nombreBillets.value.trim();
+    const telephoneValue = telephone.value.trim();
+    const adresseValue = adresse.value.trim();
+    const codePostalValue = codePostal.value.trim();
+    const parkingValue = parking.value.trim();
 
     if (nomValue === "") {
         setError(nom, "Nom est requis");
@@ -51,6 +59,46 @@ const validateForm = () => {
         noError = false;
     } else {
         setSuccess(nombreBillets);
+    }
+
+    if (telephoneValue === "") {
+        setError(telephone, "Telephone est requis");
+        noError = false;
+    } else if (!/^\d{10}$/.test(telephoneValue)) {
+        setError(telephone, "Le téléphone doit être composé de 10 chiffres");
+        noError = false;
+    } else {
+        setSuccess(telephone);
+    }
+
+    if (adresseValue === "") {
+        setError(adresse, "Adresse est requise");
+        noError = false;
+    } else if (adresseValue.length > 100){
+        setError(adresse, "L'adresse ne peut pas être plus de 100 caractères");
+        noError = false;
+    } else {
+        setSuccess(adresse);
+    }
+
+    if (codePostalValue === "") {
+        setError(codePostal, "Code postal est requis");
+        noError = false;
+    } else if (!/^[A-Za-z]\d[A-Za-z]\s?\d[A-Za-z]\d$/.test(codePostalValue)) {
+        setError(codePostal, "Code postal invalide (format : A1A 1A1)");
+        noError = false;
+    } else {
+        setSuccess(codePostal);
+    }
+
+    if (parkingValue === "aucun") {
+        setError(parking, "Selection Parking est requise");
+        noError = false;
+    } else if (parkingValue === "") {
+        setError(parking, "Option de parking est requise");
+        noError = false;
+    } else {
+        setSuccess(parking);
     }
 
     return noError;

@@ -58,35 +58,61 @@
 
     <main class="background-form flex items-center justify-center min-h-screen">
         <div class="container mx-auto max-w-screen-xl px-4">
-            <form action="./confirmation.html" class="bg-white p-8 rounded shadow-lg grid grid-cols-12 gap-4 form" id="form" novalidate
-                onsubmit="return validateForm()">
+            <form action="./confirmation.html" class="bg-white p-8 rounded shadow-lg grid grid-cols-12 gap-4 form"
+                id="form" novalidate onsubmit="return validateForm()">
 
                 <h1 class="col-span-12 text-center text-2xl font-bold text-pink-700">Achat de Billets</h1>
 
                 <!-- Nom -->
                 <div class="col-span-12 sm:col-span-6 form__input-control">
-                    <label class="block text-purple-700 font-bold mb-2" for="nom">Nom<span class="asterix">*</span></label>
-                    <input
-                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-700"
-                        type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    <label class="block text-purple-700 font-bold mb-2" for="nom">Nom<span
+                            class="asterix">*</span></label>
+                    <input class="w-full px-3 py-2 border rounded-md" type="text" id="nom" name="nom"
+                        placeholder="Votre nom" required>
                     <div class="form__errorMessage"></div>
                 </div>
 
                 <!-- Email -->
                 <div class="col-span-12 sm:col-span-6 form__input-control">
-                    <label class="block text-purple-700 font-bold mb-2" for="email">Email<span class="asterix">*</span></label>
-                    <input
-                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-700"
-                        type="email" id="email" name="email" placeholder="xyz@email.com" required>
+                    <label class="block text-purple-700 font-bold mb-2" for="email">Email<span
+                            class="asterix">*</span></label>
+                    <input class="w-full px-3 py-2 border rounded-md" type="email" id="email" name="email"
+                        placeholder="xyz@email.com" required>
+                    <div class="form__errorMessage"></div>
+                </div>
+
+                <!-- Téléphone -->
+                <div class="col-span-12 sm:col-span-6 form__input-control">
+                    <label class="block text-purple-700 font-bold mb-2" for="telephone">Téléphone<span
+                            class="asterix">*</span></label>
+                    <input class="w-full px-3 py-2 border rounded-md" type="tel" id="telephone" name="telephone"
+                        placeholder="514 000 0000" required>
+                    <div class="form__errorMessage"></div>
+                </div>
+
+                <!-- Adresse de livraison -->
+                <div class="col-span-12 sm:col-span-6 form__input-control">
+                    <label class="block text-purple-700 font-bold mb-2" for="adresse">Adresse de livraison<span
+                            class="asterix">*</span></label>
+                    <input class="w-full px-3 py-2 border rounded-md" type="text" id="adresse" name="adresse"
+                        placeholder="Votre adresse" required>
+                    <div class="form__errorMessage"></div>
+                </div>
+
+                <!-- Code postal -->
+                <div class="col-span-12 sm:col-span-6 form__input-control">
+                    <label class="block text-purple-700 font-bold mb-2" for="code_postal">Code postal<span
+                            class="asterix">*</span></label>
+                    <input class="w-full px-3 py-2 border rounded-md" type="text" id="code_postal" name="code_postal"
+                        placeholder="A1A 1A1" required>
                     <div class="form__errorMessage"></div>
                 </div>
 
                 <!-- Type de billet -->
                 <div class="col-span-12 sm:col-span-6 form__input-control">
-                    <label class="block text-purple-700 font-bold mb-2" for="type_billet">Type de billet<span class="asterix">*</span></label>
-                    <select
-                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-700"
-                        id="type_billet" name="type_billet" required>
+                    <label class="block text-purple-700 font-bold mb-2" for="type_billet">Type de billet<span
+                            class="asterix">*</span></label>
+                    <select class="w-full px-3 py-2 border rounded-md" id="type_billet" name="type_billet" required>
                         <option value="standard">GA • Experience Pass</option>
                         <option value="vip">GA+ • Experience Plus</option>
                         <option value="premium">VIP • Elevated Experience</option>
@@ -96,10 +122,22 @@
 
                 <!-- Nombre de billets -->
                 <div class="col-span-12 sm:col-span-6 form__input-control">
-                    <label class="block text-purple-700 font-bold mb-2" for="nombre_billets">Nombre de billets<span class="asterix">*</span></label>
-                    <input
-                        class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-pink-700"
-                        type="number" id="nombre_billets" name="nombre_billets" required min="1">
+                    <label class="block text-purple-700 font-bold mb-2" for="nombre_billets">Nombre de billets<span
+                            class="asterix">*</span></label>
+                    <input class="w-full px-3 py-2 border rounded-md" type="number" id="nombre_billets"
+                        name="nombre_billets" required min="1">
+                    <div class="form__errorMessage"></div>
+                </div>
+
+                <!-- Option de parking -->
+                <div class="col-span-12 sm:col-span-6 form__input-control">
+                    <label class="block text-purple-700 font-bold mb-2" for="parking">Option de parking<span
+                            class="asterix">*</span></label>
+                    <select class="w-full px-3 py-2 border rounded-md" id="parking" name="parking" required>
+                        <option value="aucun">Aucun</option>
+                        <option value="standard">Parking Standard</option>
+                        <option value="vip">Parking VIP</option>
+                    </select>
                     <div class="form__errorMessage"></div>
                 </div>
 
