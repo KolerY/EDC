@@ -37,35 +37,36 @@
       "src": "./images/maskable_icon.png",
       "sizes": "512x512",
       "type": "image/png"
-    }],
+    }
+  ],
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#db2777",
   "theme_color": "#7e22ce",
   "screenshots": [
     {
-        "src": "./images/screenshot1.png",
-        "sizes": "1280x720",
-        "type": "image/png",
-        "form_factor": "wide",
-        "label": "EDC Screenshot 1",
-        "purpose": "any"
+      "src": "./images/screenshot1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "EDC Screenshot 1",
+      "purpose": "any"
     },
     {
-        "src": "./images/screenshot2.png",
-        "sizes": "1280x720",
-        "type": "image/png",
-        "form_factor": "narrow",
-        "label": "EDC Screenshot 2",
-        "purpose": "any"
+      "src": "./images/screenshot2.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "EDC Screenshot 2",
+      "purpose": "any"
     },
     {
-        "src": "./images/screenshot3.png",
-        "sizes": "1280x720",
-        "type": "image/png",
-        "form_factor": "wide",
-        "label": "EDC Screenshot 3",
-        "purpose": "any"
+      "src": "./images/screenshot3.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "EDC Screenshot 3",
+      "purpose": "any"
     }
   ]
 }
