@@ -4,7 +4,7 @@ Yannick Blanchette,
 
 ## Description:
 
-Ce projet consiste à développer un PWA dédié au festivale de musique EDC LAS VEGAS.
+Ce projet consiste à développer une Progressive Web App dédié au festivale de musique EDC LAS VEGAS.
 
 ## Technologies:
 
